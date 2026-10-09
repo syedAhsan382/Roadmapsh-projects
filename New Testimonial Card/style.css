@@ -1,0 +1,205 @@
+/* ---------- Basics ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #1f1f1f;
+  background-color: white;
+}
+
+/* The container holds all 3 rows and stacks them vertically */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* A row puts its children side by side */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.top-row {
+  align-items: flex-start;
+}
+
+/* ---------- Author (avatar + name + job) ---------- */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.author img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author h3 {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.author p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* ---------- Card 1: dark speech bubble ---------- */
+.card-one {
+  flex: 1;
+}
+
+.bubble {
+  position: relative; /* so the little tail can be placed inside it */
+  background-color: #1f1f1f;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 40px 36px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.bubble p + p {
+  margin-top: 30px;
+}
+
+/* The tail: a tiny triangle made with borders */
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 60px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 18px solid #1f1f1f;
+}
+
+.card-one .author {
+  padding-left: 20px;
+}
+
+/* ---------- Card 2: white card with border ---------- */
+.card-two {
+  flex: 1;
+  border: 2px solid #1f1f1f;
+  border-radius: 40px;
+  padding: 40px 36px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.card-two .author {
+  margin-top: 40px;
+}
+
+.card-two .author img {
+  width: 90px;
+  height: 90px;
+}
+
+/* ---------- Card 3: photo + dark card ---------- */
+.photo {
+  width: 36%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.card-three {
+  flex: 1;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 30px;
+  padding: 50px 40px;
+}
+
+.stars {
+  color: #f5c518;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.card-three h2 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.card-three .role {
+  color: #8a8a8a;
+  font-size: 24px;
+  margin: 10px 0 40px;
+}
+
+.card-three p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* ---------- Card 4: wide card ---------- */
+.card-four {
+  border: 2px solid #1f1f1f;
+  border-radius: 40px;
+  padding: 60px 40px 40px;
+  text-align: center;
+}
+
+.card-four p {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-four h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Avatars row: arrows on the sides, photos in the middle */
+.avatars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.avatars img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.small {
+  width: 70px;
+  height: 70px;
+  opacity: 0.5; /* faded look for the side avatars */
+}
+
+.big {
+  width: 90px;
+  height: 90px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
