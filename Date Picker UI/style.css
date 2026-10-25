@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;  /* Apply the font on the whole body */
+    background-color: #f0f0f0; 
+    display: flex;  /* Apply the flex display on the body, so jcc could be used */
+    justify-content: center; /* Keep the contents on the center; jcc is due to flex */
+    padding:40px; /* Gives a gap from inside the content  */
+    
+}
+
+.calendar {
+    width:400px;
+    background-color: white;
+    padding:20px;
+    border-radius:8px; /* Round the corners of a border  */
+     
+
+}
+
+.calendar h2 {
+    text-align: center; /* Position the text to the center; different from align item center */
+    margin-bottom: 20px; /* Gives a gap outside the border (in this case 20px gap) */
+    font-size: 2rem /* Size of the font */
+    
+}
+
+input {
+    width:100%;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    gap:5px;
+}
+
+.day-names {
+    font-weight: bold;
+    text-align: center;
+    padding:10px 0;
+}
+
+
+.date {
+    text-align: center;
+    padding:12px 0;
+    border: 1px solid #cacaca;
+    
+
+}
+
+
+
