@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 15px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.password-box,
+.confirm-box,
+.name-box,
+.email-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    width: 300px;
+    margin: 7px 10px 0px 0px;
+}
+
+.password-box input,
+.confirm-box input,
+.name-box input,
+.email-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.password-box button,
+.confirm-box button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.email-box {
+    border: 2px solid red; 
+}
+
+.email-box input {
+    color:red;
+}
+
+.left-side > p {
+    color:red;
+    margin-top:10px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+ 
+.name-box {
+    margin-bottom: 15px;
+}
+
+.password-box {
+    margin-bottom: 15px;
+}
+
+.confirm-box {
+    margin-bottom: 10px;
+}
+
+.update button {
+    background-color: black;
+    border:none;
+    color: #fff;
+    padding:13px 90px;  /* Top bottom / Left right */
+    margin: 10px 7px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: conic-gradient(black 65%, #cccccc 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.right-side {
+    width:500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile {
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #E5E5E5;
+    width: 250px;
+    height:250px;
+    border-radius: 20px;
+}
+
+.card ul {
+    margin:0;
+    padding:0;
+    margin-top:20px;
+}
+
+.card li {
+    list-style-type: none;
+    line-height: 25px;  
+    margin:5px;
+    margin-left:30px;
+}
+
+.email-box input::placeholder {
+    color: red
+}
+

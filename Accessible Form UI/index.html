@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible form UI</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <label for="name">Full Name</label>
+            <div class="name-box">
+                <input type="text" id="name" placeholder="What should we call you?"> 
+            </div>
+
+            <label for="email">Email</label>
+            <div class="email-box">
+                <input type="email" id="email" placeholder="jhon@doe.com">
+            </div>
+            <p>Email is already Taken</p> 
+
+            <label for="password">Enter Password</label>
+            <div class="password-box">
+                <input type="password" id="password" placeholder="xxxxxxxx" >
+                <button type="button"  onclick="togglePassword('password')">👁</button>
+            </div>
+
+            <label for="password">Confirm password</label>
+            <div class="confirm-box">
+                <input type="password" id="confirm-password" placeholder="xxxxxxxx">
+                <button type="button"  onclick="togglePassword('confirm-password')">👁</button>
+            </div>
+
+            <div class="update">
+                <button>Update Profile</button>
+            </div>
+        </div>
+
+
+        <!------- Right side of the page ------->
+ 
+        <div class="right-side">
+            <div class="ring">
+                <div class="inner">65%</div>
+            </div>
+
+            <div class="profile">Profile Completeness</div>
+
+            <div class="card">
+                <ul>
+                    <li style="text-decoration: line-through; color:grey">Create Account</li>
+                    <li style="text-decoration: line-through; color:grey">Update Roadmap Progress</li>
+                    <li style="text-decoration: line-through; color:grey">Setup Public Profile</li>
+                    <li >Complete your first project</li>
+                    <li>Invite your friends</li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
