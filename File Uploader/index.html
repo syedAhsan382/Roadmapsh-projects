@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File Uploader (with progress bar)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <h1>📁 Image Uploader</h1>
+     <p class="subtitle">Drag & drop images or click to browse • JPG, PNG, GIF only</p>
+
+     <div class="drop-zone" id="dropZone">
+        <div class="drop-zone-icon">🖼️</div>
+        <p><strong>Drop files here</strong> or <span class="browse">browse</span></p>
+        <small>Supported: JPG, PNG, GIF</small>
+        <input type="file" id="fileInput" class="file-input" accept="image/jpeg,image/png,image/gif" multiple />
+     </div>
+     
+     <div id="errorBox"></div>
+     <div class="preview-grid" id="previewGrid"></div>
+     <button class="clear-all" id="clearAll" style="display:none;">🗑️ Clear All<button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
