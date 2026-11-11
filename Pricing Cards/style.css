@@ -1,0 +1,134 @@
+.container {
+  font-family: Arial, sans-serif;
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap:20px;
+}
+
+.card {
+  width: 300px;
+  border: 2px solid #222;
+  border-radius: 20px;
+  padding: 30px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.pro-card {
+  width: 300px;
+  border: 2px solid #222;
+  border-radius: 20px;
+  padding: 30px 24px;
+  text-align: center;
+  position: relative;
+  transform: scale(1.1);  /* Makes the middle card a size bigger  */
+  margin-left:20px;
+  margin-right:20px;
+  
+
+}
+
+
+.plan-name {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+.price {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.per-month {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.description {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #222;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  text-align: left;
+}
+
+.features li {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+/* the circle with a check mark before each item */
+.features li::before {
+  content: "✓";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border: 1.5px solid #222;
+  border-radius: 50%;
+  font-size: 13px;
+  margin-right: 14px;
+}
+
+.choose-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #f2f2f2;
+  border: 2px solid #222;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.choose-btn:hover {
+    background-color: #E0E0E0;
+
+}
+
+.pro-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #F0654F;
+  border: 2px solid #222;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pro-btn:hover {
+    background: #D9503A;
+
+}
+
+.badge {
+  position: absolute;
+  top: -16px;            /* moves it up so it sits on the top border */
+  left: 50%;
+  transform: translateX(-50%); /* centers it horizontally */
+  background: #f0654f;
+  color: white;
+  padding: 6px 16px;
+  border: 2px solid #222;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+
