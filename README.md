@@ -16,3 +16,7 @@ https://roadmap.sh/projects/image-grid
 https://roadmap.sh/projects/tooltip-ui
 
 https://roadmap.sh/projects/pricing-cards
+
+https://roadmap.sh/projects/js-greeting-builder
+
+https://roadmap.sh/projects/js-temperature-converter
